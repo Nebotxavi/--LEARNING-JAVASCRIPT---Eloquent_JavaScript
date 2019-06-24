@@ -16,6 +16,6 @@ for (let y = 1; y <= limit; y++){
       board += ' ';
     }
   }
-  board += '\n'
+  board += '\n';
 }           
 console.log(board)
