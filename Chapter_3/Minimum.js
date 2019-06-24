@@ -8,21 +8,17 @@ function min(n1, n2){
   return Math.min(n1, n2)
 }
 
-console.log(min(0, 10));
-// → 0
-console.log(min(0, -10));
-// → -10
+console.log(min(0, 10)); // → 0
+console.log(min(0, -10)); // → -10
 
 // OPTION 2 - arrow function
 
 const min = (n1, n2) => Math.min(n1, n2);
 
-console.log(min(0, 10));
-// → 0
-console.log(min(0, -10));
-// → -10
+console.log(min(0, 10)); // → 0
+console.log(min(0, -10)); // → -10
 
-// OPTION arrow function without math.min
+// OPTION 3 - arrow function without math.min
 
 const min = (n1, n2) => {
   if (n1 > n2)
