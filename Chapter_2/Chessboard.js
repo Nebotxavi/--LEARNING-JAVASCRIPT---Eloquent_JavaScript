@@ -18,4 +18,4 @@ for (let y = 1; y <= limit; y++){
   }
   board += '\n';
 }           
-console.log(board)
+console.log(board);
