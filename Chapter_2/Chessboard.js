@@ -5,20 +5,17 @@ When you have a program that generates this pattern, define a bindingsize= 8and 
 When you have a program that generates this pattern, define a bindingsize= 8and change the program so that it works for anysize, outputting a gridof the given width and height.
 */
 
+let limit = prompt("Introduce the number of rows and lines")
+let board = ''
 
-let limit = prompt('Introduce a number')
-let line1 = ' # # # #'
-let line2 = '# # # # '
-let switcher = true
-for (let counter = 1; counter <= limit; counter++){
-  if (switcher) {
-    console.log(line1);
-  } else {
-      console.log(line2);
-  }
-  if (switcher){
-    switcher = false;
-  } else {
-      switcher = true
+for (let y = 1; y <= limit; y++){
+  for (let x = 1; x <= limit; x++){
+    if ((y + x) % 2 == 0){
+      board += '#';
+    } else {
+      board += ' ';
     }
   }
+  board += '\n';
+}           
+console.log(board);

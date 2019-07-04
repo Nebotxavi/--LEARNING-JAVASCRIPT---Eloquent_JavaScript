@@ -13,5 +13,5 @@ for (let num = 1; num <= 100; num++) {
     if (num % 5 == 0) {
         value += 'Buzz';
     }
-    console.log(value || num)
+    console.log(value || num);
 }
